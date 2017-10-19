@@ -1,0 +1,5 @@
+---
+applications:
+- name: publish-onboarding
+  memory: 128M
+  buildpack: staticfile_buildpack
