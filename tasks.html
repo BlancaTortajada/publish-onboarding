@@ -77,10 +77,10 @@
 
          <h1 class="heading-large">Tasks</h1>
 
-         <div class="box-task" style="margin: 0 0 30px 0; padding:30px; background-color: #128400; color: #fff;">
+         <div class="box-intro" style="margin: 0 0 30px 0; padding:30px; background-color: #128400; color: #fff;">
             <div>
                <span class="heading-medium">This is your task list</span><br>
-               <span style="display: block; margin-top: 10px; max-width: 80%;">It shows you what you need to do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+               <span style="display: block; margin-top: 10px; max-width: 80%;">It shows you what you need to do to make your datasets more findable.</span>
                <a class="box-trigger" href="#" style="display: inline-block; margin-top: 15px; font-size:16px; color: #fff; ">Got it. Don't show this message again</a>
             </div>
          </div>
@@ -192,7 +192,7 @@
                               <a class="dgu-sortable-column__heading__ascending" href="/tasks?fix_sort_by=broken-name#broken-datasets">Name</a>
                            </th>
                            <th class="dgu-sortable-column__heading dgu-tasklist__broken-links-column" style="text-align: left;">
-                              <a class="dgu-sortable-column__heading__ascending dgu-tasklist__link-count" href="/tasks?fix_sort_by=increasing#broken-datasets">Findability</a>
+                              <a class="dgu-sortable-column__heading__ascending dgu-tasklist__link-count" href="/tasks?fix_sort_by=increasing#broken-datasets">Problems</a>
                            </th>
                            <th class="dgu-tasklist__actions-column">
                               <span class="visuallyhidden">Actions</span>
@@ -202,28 +202,28 @@
                      <tbody>
                         </tr>
                            <td style="padding-left: 0;"><a href="#">Manhole cover locations</a></td>
-                           <td style="padding-left: 0;">40%</td>
-                           <td style="padding-left: 0;"><a href="#">Fix</a></td>
+                           <td style="padding-left: 0;">3</td>
+                           <td style="padding-left: 0;"><a href="dataset.html">Fix</a></td>
                         <tr>
                         </tr>
                            <td style="padding-left: 0;"><a href="#">Bus stops improvements</a></td>
-                           <td style="padding-left: 0;">35%</td>
-                           <td style="padding-left: 0;"><a href="#">Fix</a></td>
+                           <td style="padding-left: 0;">2</td>
+                           <td style="padding-left: 0;"><a href="dataset.html">Fix</a></td>
                         <tr>
                         </tr>
                            <td style="padding-left: 0;"><a href="#">Central government spending</a></td>
-                           <td style="padding-left: 0;">10%</td>
-                           <td style="padding-left: 0;"><a href="#">Fix</a></td>
+                           <td style="padding-left: 0;">1</td>
+                           <td style="padding-left: 0;"><a href="dataset.html">Fix</a></td>
                         <tr>
                         </tr>
                            <td style="padding-left: 0;"><a href="#">Hospital inspection results</a></td>
-                           <td style="padding-left: 0;">45%</td>
-                           <td style="padding-left: 0;"><a href="#">Fix</a></td>
+                           <td style="padding-left: 0;">1</td>
+                           <td style="padding-left: 0;"><a href="dataset.html">Fix</a></td>
                         <tr>
                         </tr>
                            <td style="padding-left: 0;"><a href="#">Animal count in London Zoo</a></td>
-                           <td style="padding-left: 0;">5%</td>
-                           <td style="padding-left: 0;"><a href="#">Fix</a></td>
+                           <td style="padding-left: 0;">1</td>
+                           <td style="padding-left: 0;"><a href="dataset.html">Fix</a></td>
                         <tr>
                      </tbody>
                      <tfoot>
@@ -286,7 +286,7 @@
       <!-- Script for hiding tutorial boxes -->
       <script>
          $('a.box-trigger').click (function() {
-            $('.box-task').toggle();
+            $('.box-intro').toggle();
             event.preventDefault();
          });
       </script>

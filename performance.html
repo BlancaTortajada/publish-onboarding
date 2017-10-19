@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="">
+<html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Publish Government Data</title>
+      <title>Manage datasets</title>
       <link href="onboard_files/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
       <link href="onboard_files/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
       <link href="onboard_files/fonts.css" media="all" rel="stylesheet" type="text/css">
@@ -17,11 +16,13 @@
       <meta name="format-detection" content="telephone=no">
       <link rel="stylesheet" href="onboard_files/app.css">
       <link rel="stylesheet" href="onboard_files/app(1).css">
+      <link rel="stylesheet" media="screen" href="beta_files/beta-app.css" data-turbolinks-track="true">
+      <script src="beta_files/beta-app.js" data-turbolinks-track="true"></script>
    </head>
 
    <body class="js-enabled">
       <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
+      
       <div id="skiplink-container">
          <div>
             <a href="#" class="skiplink">Skip to main content</a>
@@ -33,7 +34,7 @@
       </div>-->
 
       <header role="banner" id="global-header" class="with-proposition">
-         <div class="header-wrapper">
+         <div class="header-wrapper" style="padding-bottom: 0;">
             <div class="header-global">
                <div class="header-logo">
                   <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
@@ -55,12 +56,12 @@
                <a class="js-header-toggle menu" href="#proposition-links">Menu</a>
                   <nav id="proposition-menu">
                      <ul id="proposition-links">
-                        <!-- <li><a href="tasks.html">Tasks</a></li> -->
-                        <!-- <li><a href="manage-datasets.html">Manage datasets</a></li> -->
-                        <!-- <li><a href="performance.html">Performance</a></li> -->
+                        <li><a href="tasks.html" style="color: #8bc658;">Tasks</a></li>
+                        <li><a href="manage-datasets.html">Manage datasets</a></li>
+                        <li><a href="performance.html">Performance</a></li>
                         <li><a href="support-signedin.html">Support</a></li>
-                        <!-- <li><a href="account.html">Ben Tate</a></li> -->
-                        <!-- <li><a href="publish.html">Sign out</a></li> -->
+                        <li><a href="account.html">Ben Tate</a></li>
+                        <li><a href="publish.html">Sign out</a></li>
                      </ul>
                   </nav>
                </div>
@@ -71,72 +72,70 @@
 
       <div id="global-header-bar" style="background-color: #128400;"></div>
 
-      <main id="content" class="main-content" role="main" data-id="">
-         
-         <!--<div class="phase-banner">
-            <p>
-               <strong class="phase-tag">BETA</strong>
-               <span>This is a new service – your <a href="https://www.passport.service.gov.uk/help/feedback" target="_blank">feedback<span class="visuallyhidden">(Opens in a new window)</span></a> will help us to improve it.</span>
-            </p>
-         </div>-->
 
-         <div class="photo-guide">
-            <a href="profile.html" class="back-link">Back to Data.gov.uk</a>
-            <span class="marker">Guide part 2 of 4</span>
-         </div>
-         <div class="grid-row">
-            <div class="photo-guide">
-               <div class="column-full">
-                  <div class="flash-card" style="background-color: #128400;">
-                     <div class="grid-row">
-                        <div class="column-two-thirds">
-                           <header>
-                              <h1>It's hard to find the data we publish</h1>
-                           </header>
-                           <p style="font-size: 24px;">The way our data is described makes it hard to find. The new process will help explain the best way to describe data when you publish it.</p>
-                        </div>
-                        
-                        <div class="column-one-third">
-                           <img src="onboard_files/data-devices-2.png" width="389" alt="">
-                        </div>
-                     </div>
+      <main role="main" tabindex="-1" id="content">
 
-                     <nav class="guide-nav">
-                        <ul>
-                           <li class="button-guide button-guide-previous">
-                              <a href="onboard1.html">Back</a>
-                           </li>
-                           <li class="button-guide button-guide-next">
-                              <a href="onboard3.html">Next</a>
-                           </li>
-                        </ul>
-                     </nav>
+         <h1 class="heading-large">Performance</h1>
 
-                  </div>
-               </div>
+         <div class="box-intro" style="margin: 0 0 30px 0; padding:30px; background-color: #128400; color: #fff;">
+            <div>
+               <span class="heading-medium">This is your performance dashboard</span><br>
+               <span style="display: block; margin-top: 10px; max-width: 80%;">It shows you what you how often your data is used and where you can make improvements to it.</span>
+               <a class="box-trigger" href="#" style="display: inline-block; margin-top: 15px; font-size:16px; color: #fff; ">Got it. Don't show this message again</a>
             </div>
          </div>
+
+         <div class="grid-row">
+                <div class="column-one-quarter">
+                    <div class="data border-beta" style="border-top: none; padding-top: 0px;">
+                        <p style="text-decoration: none;">
+                            <span class="data-item bold-xxlarge">358</span>
+                            <span class="data-item bold-xsmall">published datasets</span>
+                        </p>
+                    </div>
+                </div>
+                 <div class="column-one-quarter">
+                    <div class="data border-beta" style="border-top: none; padding-top: 0px;">
+                        <p style="text-decoration: none;">
+                            <span class="data-item bold-xxlarge">316</span>
+                            <span class="data-item bold-xsmall">complete datasets</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column-one-quarter">
+                    <div class="data border-beta" style="border-top: none; padding-top: 0px;">
+                        <p style="text-decoration: none;">
+                            <span class="data-item bold-xxlarge">16</span>
+                            <span class="data-item bold-xsmall">updated datasets</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column-one-quarter">
+                    <div class="data border-beta" style="border-top: none; padding-top: 0px;">
+                        <p style="text-decoration: none;">
+                            <span class="data-item bold-xxlarge">110</span>
+                            <span class="data-item bold-xsmall">data links fixed</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
       </main>
+
+      <div id="global-app-error" class="app-error hidden"></div>
+      <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
 
       <footer class="group js-footer" id="footer" role="contentinfo" style="border-top: 1px solid #a1acb2">
          <div class="footer-wrapper">
             <div class="footer-meta">
                <div class="footer-meta-inner">
-                  <ul>
-                     <li><a href="https://www.passport.service.gov.uk/help/cookies" target="_blank">Cookies <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-                     <li><a href="https://www.passport.service.gov.uk/help/feedback" target="_blank">Feedback <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-                     <li><a href="https://www.passport.service.gov.uk/help" target="_blank">Help <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-                     <li><a href="https://www.passport.service.gov.uk/help/privacy" target="_blank">Privacy <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-                     <li><a href="https://www.passport.service.gov.uk/help/terms-and-conditions" target="_blank">Terms and conditions <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-                     <li>Built by Government Digital Service</li>
-                  </ul>
                   <div class="open-government-licence">
                      <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
                      <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
                   </div>
                </div>
                <div class="copyright">
-                  <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+                  <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
                </div>
             </div>
          </div>
@@ -144,8 +143,18 @@
 
       <div id="global-app-error" class="app-error hidden"></div>
       <script src="onboard_files/govuk-template.js"></script>
-      <!-- <script src="onboard_files/app.js"></script>
-      <script src="onboard_files/app(2).js"></script> -->
+      <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+      <!-- Script for hiding tutorial boxes -->
+      <script>
+         $('a.box-trigger').click (function() {
+            $('.box-intro').toggle();
+            event.preventDefault();
+         });
+      </script>
+
    </body>
-</html>
+ </html>
+
+
 

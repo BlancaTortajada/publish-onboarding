@@ -76,6 +76,14 @@
 
          <h1 class="heading-large">Manage your datasets</h1>
 
+         <div class="box-intro" style="margin: 0 0 30px 0; padding:30px; background-color: #128400; color: #fff;">
+            <div>
+               <span class="heading-medium">Here are all of your datasets</span><br>
+               <span style="display: block; margin-top: 10px; max-width: 80%;">It also shows your orgnaisation's datasets.</span>
+               <a class="box-trigger" href="#" style="display: inline-block; margin-top: 15px; font-size:16px; color: #fff; ">Got it. Don't show this message again</a>
+            </div>
+         </div>
+
          <p>
             <a class="secondary-button" href="http://publish-data-beta.herokuapp.com/datasets/new">Create a dataset</a>
          </p>
@@ -243,6 +251,15 @@
       <div id="global-app-error" class="app-error hidden"></div>
       <script src="onboard_files/govuk-template.js"></script>
       <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+
+      <!-- Script for hiding tutorial boxes -->
+      <script>
+         $('a.box-trigger').click (function() {
+            $('.box-intro').toggle();
+            event.preventDefault();
+         });
+      </script>
+
    </body>
  </html>
 
